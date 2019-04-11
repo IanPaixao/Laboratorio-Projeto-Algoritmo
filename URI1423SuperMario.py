@@ -76,4 +76,4 @@ while trials > 0:
 
     print(total)
 
-    t -= 1
+    trials -= 1
