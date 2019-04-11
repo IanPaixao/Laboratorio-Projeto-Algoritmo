@@ -1,7 +1,7 @@
 import networkx as nx
 
   firstline = input("")
-  c = 1
+  h = 1
   while(firstline != '0 0'):
     """
     Generating and populating the graph
@@ -25,7 +25,7 @@ import networkx as nx
     
     trials = input()
     trials = int(trials)
-    print("Instancia",c)
+    print("Instancia",h)
     
     """
     search for the heaviest weight between source and destination
@@ -50,5 +50,5 @@ import networkx as nx
           greater = weight    
       print(greater)   
       trials = trials - 1 
-    c = c + 1       
+    h = h + 1       
     firstline = input("")       
