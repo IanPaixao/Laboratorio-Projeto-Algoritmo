@@ -70,9 +70,9 @@ while trials > 0:
                 break
 
     for i in range(0, k):
-        maxR = max(values)
-        total -= maxR
-        values.remove(maxR)
+        maxweight = max(values)
+        total -= maxweight
+        values.remove(maxweight)
 
     print(total)
 
