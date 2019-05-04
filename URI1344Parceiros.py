@@ -3,7 +3,7 @@ import networkx as nx
 """
 Method to remove nodes lesses than the established K variable form the graph
 """
-def rmvNode(G,degree):
+def destroyNode(G,degree):
   aux = True
   while(aux):
     G1 = G.copy()
@@ -34,7 +34,7 @@ def main():
       edges = edges - 1
     connection = input()
 
-    rmvNode(G,degree)
+    destroyNode(G,degree)
     size = len(G)
   
     """
