@@ -17,7 +17,7 @@ def main():
       connection = input()
       node1,node2 = connection.split()
       G.add_edge(int(node1),int(node2))
-      eges = edges - 1
+      edges = edges - 1
     connection = input()
 
     rmvNode(G,degree)
