@@ -7,7 +7,7 @@ def main():
     nodes,edges,degree = inputs.split()
     nodes = int(nodes)
     edges = int(edges)
-    k = int(k)
+    degree = int(degree)
 
     """
     Generating and populating the graph
@@ -16,7 +16,7 @@ def main():
     while edges > 0:
       connection = input()
       node1,node2 = connection.split()
-      grafo.add_edge(int(node1),int(node2))
+      G.add_edge(int(node1),int(node2))
       eges = edges - 1
     connection = input()
 
