@@ -1,5 +1,19 @@
 import networkx as nx
 
+"""
+Method to remove nodes lesses than the established K variable form the graph
+"""
+def rmvNode(G,degree):
+  aux = True
+  while(aux):
+    G1 = G.copy()
+    aux = False
+    for x in G1.nodes():
+      if (degree > G.degree(x)):
+        G.remove_node(x)
+        aux = True
+pass
+
 def main():
   inputs = input()
   while(inputs != '0 0 0'):   
@@ -34,18 +48,3 @@ def main():
       print("0")
 
 main()    
-
-"""
-Method to remove nodes lesses than the established K variable form the graph
-"""
-def rmvNode(G,degree):
-  aux = True
-  while(aux):
-    G1 = G.copy()
-    aux = False
-    for x in G1.nodes():
-      if (degree > G.degree(x)):
-        G.remove_node(x)
-        aux = True
-pass
-
