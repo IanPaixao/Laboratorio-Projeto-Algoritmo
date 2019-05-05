@@ -64,7 +64,7 @@ while trials > 0:
             if(trim + weights[j]) < l:
                 trim += weights[j]
                 if j == len(weights) - 1:
-                    values.append(weights)
+                    values.append(trim)
             else:
                 values.append(trim)
                 break
