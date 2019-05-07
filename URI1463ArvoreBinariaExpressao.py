@@ -2,17 +2,6 @@
 import sys
 from pythonds.basic.stack import Stack
 
-
-def main():
-
-  for statementsin sys.stdin:
-      statements = input()
-      statements = infixToPostfix(a)
-       statements = statements.replace(" ","")
-      Tree = insert(statements)
-      treePrint(Tree)
-main()
-
 '''
 The followng method change the infix way of reading the sentence to postfix way of reading
 '''
@@ -121,6 +110,16 @@ def insert(sentence):
   aws = stack.pop()
   return aws
 pass
+
+def main():
+
+  for statementsin sys.stdin:
+      statements = input()
+      statements = infixToPostfix(a)
+       statements = statements.replace(" ","")
+      Tree = insert(statements)
+      treePrint(Tree)
+main()
 
 
 
