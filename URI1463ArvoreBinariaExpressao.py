@@ -115,7 +115,7 @@ def main():
 
   for statementsin sys.stdin:
       statements = input()
-      statements = infixToPostfix(a)
+      statements = infixToPostfix(statements)
        statements = statements.replace(" ","")
       Tree = insert(statements)
       treePrint(Tree)
